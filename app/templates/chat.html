@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>PaLmGPT-nexus</title>
     <link rel="stylesheet" href="/app/static/style.css">
+    <script src="/app/static/fetch.js"></script>
 </head>
 <body>
   <div>
@@ -11,6 +12,8 @@
     <form method="POST">
       <input type="text" id="prompt" name="prompt">
       <button type="submit">send</button>
+      <div><p>{{ answerbard }}</p></div>
+      <div><p>{{ answergpt }}</p></div>
   </form>
 </body>
 </html>
